@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import logo from '../assets/logo.png';
+
 const WrapperLogo = styled.div`
     .logo {
         object-fit: cover;
@@ -14,7 +16,7 @@ const WrapperLogo = styled.div`
 const Logo = () => {
     return (
         <WrapperLogo>
-            <img src="../assets/logo.png" className="logo" alt="logo" />
+            <img src={logo} className="logo" alt="logo" />
         </WrapperLogo>
     );
 };
